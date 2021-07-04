@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>Medicare Medical</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-style: italic;
+        }
+
+        .navbar {
+            background-color: #011c50;
+             animation-name: ex;
+             animation-duration: 4s;
+             animation-iteration-count: 10;
+
+        }
+        @keyframes ex {
+  0%   {background-color:black;}
+ 
+  50%  {background-color: blue;}
+ 
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+     
+
+        .navbar-brand {
+            color: white;
+            font-size: 30px;
+            ;
+        }
+         iframe{
+            transition: width 2s;
+        }
+        iframe:hover{
+            transform: scale(1.1);
+        }
+        .img-top{
+            width:100%;
+            height:200px;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+      
+        footer {
+            bottom: 0;
+            background-color: #011c50;
+            margin: 0;
+            padding: 0;
+            /* position:fixed; */
+        }
+       
+
+        .copy {
+            background-color: #03002e;
+        }
+        .covid,.heart,.thyroid{
+            background-color: skyblue;
+        }
+         .covid:hover,.heart:hover,.thyroid:hover{
+            background-color: khaki;
+        }
+        .cancer,.general,.cough{
+            background-color: khaki;
+        }
+        .cancer:hover,.general:hover,.cough:hover{
+            background-color: skyblue;
+        }
+       
+        
+
+        .card{
+            border:0;
+            margin:4px;
+        }
+        .card>.card-body>.btn{
+            background-color: red;
+            color:white;
+        }
+        .card>.card-body>.btn:hover{
+           background-color: green;
+        }
+        .navbar-toggler{
+            background-color: beige;
+            border:2px solid white;
+        }
+        #drop{
+           background-color: #011c50;
+           
+        }
+        .dropdown-item{
+            color:white;
+        }
+    </style>
+   
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-light" href="#">Medicare Medical</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html" style="color:white"><i class="fa fa-home" aria-hidden="true"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color:white"><i class="fa fa-medkit" aria-hidden="true"></i>Medicines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#foot" style="color:white"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a>
+                </li>
+                <div class="dropdown mr-0 ml-4 float-right">
+                    <button class="btn dropdown-toggle mr-0 ml-4" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="color:navy; background-color: white;">
+                        Type of Medicine
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id = "drop">
+                        <a class="dropdown-item" href="#covid">Covid Medicine</a>
+                        <a class="dropdown-item" href="#cancer">Cancer Medicine</a>
+                        <a class="dropdown-item" href="#heart">Heart Disease Medicine</a>
+                        <a class="dropdown-item" href="#cough">Cold Cough Medicine</a>
+                        <a class="dropdown-item" href="#thyroid">Thyroid Medicine</a>
+                    </div>
+                </div>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+   
+        <h3 class = "text-center my-4 py-4">Buy Medicine Online</h3>
+
+
+        <div class = "container covid my-4" id = "covid">
+            <h4 class = "text-center my-4 py-4" >Covid Medicine</h4>
+            <div class = "row ">
+                <div class = "col-sm-6 col-md-4 col-lg-3">
+                    <div class = "card">
+                        <img src = "paracetamol.jpeg" class = "img-top">
+                        <div class = "card-body">
+                            <h5 class="card-title">Paracetamol</h5>
+                            
+                            <cite class = "py-2" class = "py-1">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=medicines+for+health&adgrpid=60494010378&ext_vrnc=hi&gclid=EAIaIQobChMIgP-kxeDJ8QIVjsIWBR2t_QOZEAMYASAAEgLalPD_BwE&hvadid=294135410315&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=12217546977648621512&hvtargid=kwd-409385301541&hydadcr=24025_1826359&tag=googinhydr1-21&ref=pd_sl_8lklcgaw4v_b" class="btn">Buy Now</a> 
+                        </div>
+                    </div>
+                    </div>
+                    <div class ="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="vitaminb.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Vitamin B</h5>
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=medicines+for+health&adgrpid=60494010378&ext_vrnc=hi&gclid=EAIaIQobChMIgP-kxeDJ8QIVjsIWBR2t_QOZEAMYASAAEgLalPD_BwE&hvadid=294135410315&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=12217546977648621512&hvtargid=kwd-409385301541&hydadcr=24025_1826359&tag=googinhydr1-21&ref=pd_sl_8lklcgaw4v_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="vitaminc.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Vitamin C</h5>
+                          
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=medicines+for+health&adgrpid=60494010378&ext_vrnc=hi&gclid=EAIaIQobChMIgP-kxeDJ8QIVjsIWBR2t_QOZEAMYASAAEgLalPD_BwE&hvadid=294135410315&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=12217546977648621512&hvtargid=kwd-409385301541&hydadcr=24025_1826359&tag=googinhydr1-21&ref=pd_sl_8lklcgaw4v_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="zincovit.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Zincovit</h5>
+                           
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=medicines+for+health&adgrpid=60494010378&ext_vrnc=hi&gclid=EAIaIQobChMIgP-kxeDJ8QIVjsIWBR2t_QOZEAMYASAAEgLalPD_BwE&hvadid=294135410315&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=12217546977648621512&hvtargid=kwd-409385301541&hydadcr=24025_1826359&tag=googinhydr1-21&ref=pd_sl_8lklcgaw4v_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <!-- Cancer -->
+
+        <div class="container cancer my-4"  id = "cancer">
+            <h4 class="text-center my-4 py-4">Cancer Medicine</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cancer1.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Brukinsa</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.indiamart.com/welcomehealthcare/cancer-medicine.html" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cancer2.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Dvarina </h5>
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.indiamart.com/welcomehealthcare/cancer-medicine.html" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cancer3.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Daxotel Tablets</h5>
+                           
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.indiamart.com/welcomehealthcare/cancer-medicine.html" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cancer4.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Carcin Tablet</h5>
+                           
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.indiamart.com/welcomehealthcare/cancer-medicine.html" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!-- Heart -->
+
+        <div class="container heart my-4" id = "heart">
+            <h4 class="text-center my-4 py-4">Heart Medicine</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="heart1.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Devas-40</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Heart-Blockage-Medicine-Hriday-Nashak/dp/B07N8723L7" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="heart2.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Norvasc</h5>
+                             <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Heart-Blockage-Medicine-Hriday-Nashak/dp/B07N8723L7" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="heart3.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Drose AC</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Heart-Blockage-Medicine-Hriday-Nashak/dp/B07N8723L7" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="heart4.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Heridia & Xenical</h5>
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Heart-Blockage-Medicine-Hriday-Nashak/dp/B07N8723L7" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!-- Cough -->
+
+        <div class="container cough my-4" id = "cough">
+            <h4 class="text-center my-4 py-4">Cough & Cold Medicine</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cold1.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Crocin</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Cough-Cold/b?ie=UTF8&node=1374499031" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cold2.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kofhills</h5>
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Cough-Cold/b?ie=UTF8&node=1374499031" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cold3.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Himalyas - Tulsi</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Cough-Cold/b?ie=UTF8&node=1374499031" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="cold4.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cofsills Syrup</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/Cough-Cold/b?ie=UTF8&node=1374499031" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!-- Thyroid -->
+        <div class="container thyroid my-4" id = "thyroid">
+            <h4 class="text-center my-4 py-4">Thyroid Medicine</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="ty1.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Thyronorm 75mcg</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=thyroid&adgrpid=64605268971&ext_vrnc=hi&gclid=EAIaIQobChMIq8u5-97J8QIV0H4rCh2BQAFfEAAYAiAAEgLqM_D_BwE&hvadid=294131986982&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=9599045045431304078&hvtargid=kwd-10030886&hydadcr=12283_1794645&tag=googinhydr1-21&ref=pd_sl_7wrtsw9o1q_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="ty2.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Thyroxin Sodium Tablet</h5>
+                             <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=thyroid&adgrpid=64605268971&ext_vrnc=hi&gclid=EAIaIQobChMIq8u5-97J8QIV0H4rCh2BQAFfEAAYAiAAEgLqM_D_BwE&hvadid=294131986982&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=9599045045431304078&hvtargid=kwd-10030886&hydadcr=12283_1794645&tag=googinhydr1-21&ref=pd_sl_7wrtsw9o1q_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="ty3.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">ThyroQ</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=thyroid&adgrpid=64605268971&ext_vrnc=hi&gclid=EAIaIQobChMIq8u5-97J8QIV0H4rCh2BQAFfEAAYAiAAEgLqM_D_BwE&hvadid=294131986982&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=9599045045431304078&hvtargid=kwd-10030886&hydadcr=12283_1794645&tag=googinhydr1-21&ref=pd_sl_7wrtsw9o1q_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="ty4.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Thyronarc</h5>
+                           
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="https://www.amazon.in/s?k=thyroid&adgrpid=64605268971&ext_vrnc=hi&gclid=EAIaIQobChMIq8u5-97J8QIV0H4rCh2BQAFfEAAYAiAAEgLqM_D_BwE&hvadid=294131986982&hvdev=c&hvlocphy=9303093&hvnetw=g&hvqmt=b&hvrand=9599045045431304078&hvtargid=kwd-10030886&hydadcr=12283_1794645&tag=googinhydr1-21&ref=pd_sl_7wrtsw9o1q_b" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!-- General -->
+        <!-- <div class="container general my-4">
+            <h4 class="text-center my-4 py-4">General Medicine</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="paracetamol.jpeg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Paracetamol</h5>
+                            
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="vitaminb.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Vitamin B</h5>
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="vitaminc.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Vitamin C</h5>
+                           
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="zincovit.jpg" class="img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Zincovit</h5>
+                           
+                            <cite class = "py-2">Price 150/- </cite>
+                            <br>
+                            <a href="#" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+     -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="text-center text-light " id = "foot">
+       
+        <h3 class="py-1"><em>Connect with us</em></h3>
+        <h6 class=" py-1"><i class="fa fa-address-book" aria-hidden="true"></i>Address : 240/2 Alankriti Street Andheri (MUMBAI) </h6>
+        <h6 class=" py-1"><i class="fa fa-phone" aria-hidden="true"></i>Contact : 1800-234-5789 </h6>
+        <h6 class=" py-1"><i class="fa fa-envelope" aria-hidden="true"></i>Email : abc@gmail.com</h6>
+        <p class=" my-2 py-4 copy">&copy; CopyRight 2021 by Sakshi Asati</p>
+    
+    
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
